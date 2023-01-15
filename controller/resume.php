@@ -1,3 +1,3 @@
 <?php
 
-require('view/resume.view.php');
+require 'view/resume.view.php';

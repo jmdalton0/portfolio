@@ -1,3 +1,3 @@
 <?php
 
-require('view/experience.view.php');
+require 'view/experience.view.php';

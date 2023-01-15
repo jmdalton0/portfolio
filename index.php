@@ -1,23 +1,19 @@
 <?php
 
-$uri = $_SERVER['REQUEST_URI'];
+require 'controller/error.php';
 
-if ($uri === '/' || $uri === '/index.php') {
-    require('controller/index.php');
+$path = parse_url($_SERVER['REQUEST_URI'])['path'];
+$routes = [
+    '/' => 'controller/index.php',
+    '/index.php' => 'controller/index.php',
+    '/projects' => 'controller/projects.php',
+    '/experience' => 'controller/experience.php',
+    '/contact' => 'controller/contact.php',
+    '/resume' => 'controller/resume.php'
+];
 
-} else if ($uri === '/projects') {
-    require('controller/projects.php');
-
-} else if ($uri === '/experience') {
-    require('controller/experience.php');
-
-} else if ($uri === '/contact') {
-    require('controller/contact.php');
-
-} else if ($uri === '/resume') {
-    require('controller/resume.php');
-
+if(array_key_exists($path, $routes)) {
+    require $routes[$path];
 } else {
-    $error_code = 404;
-    require('controller/error.php');
+    abort(404);
 }

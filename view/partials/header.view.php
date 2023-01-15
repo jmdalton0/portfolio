@@ -27,7 +27,7 @@
                         <a href="/contact">Contact</a>
                     </li>
                     <li>
-                        <a href="/resume">Resume</a>
+                        <a href="/resume" target="_blank">Resume</a>
                     </li>
                 </ul>
             </nav>

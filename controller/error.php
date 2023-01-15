@@ -1,4 +1,6 @@
 <?php
 
-http_response_code($error_code);
-require('view/error.view.php');
+function abort($code) {
+    http_response_code($code);
+    require 'view/error.view.php';
+}

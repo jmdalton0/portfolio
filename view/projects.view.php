@@ -1,24 +1,30 @@
-<?php require('view/partials/header.view.php'); ?>
+<?php require 'view/partials/header.view.php'; ?>
 
 <main>
     <section>
         <h1>Projects</h1>
         <h2>Some of the applications I have developed</h2>
     </section>
-    <section>
-        <div>
+
+    <?php foreach ($projects as $project) : ?>
+        <section>
             <div>
-                <h2>Retro Snake</h2>
-                <h4>Play the classic arcade game.</h4>
-                <a href="/projects/snake">VIEW</a>
+                <div>
+                    <h2><?= $project->get_name() ?></h2>
+                    <h4><?= $project->get_description() ?></h4>
+                    <a href="/projects?project=<?= $project->get_id() ?>">VIEW</a>
+                </div>
+                <div>
+                    <a href="/projects?project=<?= $project->get_id() ?>">
+                        <img
+                            src="assets/thumbnail/<?= $project->get_image() ?>"
+                            alt="<?= $project->get_name() ?>"
+                        />
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="/projects/snake">
-                    <img src="assets/thumbnail/snake-thumbnail.png" alt="Retro Snake">
-                </a>
-            </div>
-        </div>
-    </section>
+        </section>
+    <?php endforeach; ?>
 </main>
 
-<?php require('view/partials/footer.view.php') ?>
+<?php require 'view/partials/footer.view.php'; ?>

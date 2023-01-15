@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error</title>
-</head>
-<body>
+<?php require 'view/partials/header.view.php'; ?>
+
+<main>
     <h1>There was an error.</h1>
-    <p>Error code: <?= $error_code ?></p>
-    <a href="/">back</a>
-</body>
-</html>
+    <p>Error code: <?= $code ?></p>
+    <a href="/">home</a>
+</main>
+
+<?php require 'view/partials/footer.view.php'; ?>

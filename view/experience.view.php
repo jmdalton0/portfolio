@@ -1,4 +1,4 @@
-<?php require('view/partials/header.view.php'); ?>
+<?php require 'view/partials/header.view.php'; ?>
 
 <main>
     <section>
@@ -6,7 +6,7 @@
         <h2>My work history</h2>
     </section>
 
-    <?php require('view/partials/experience.view.php'); ?>
+    <?php require 'view/partials/experience.view.php'; ?>
 
     <section>
         <h2>View My Complete Resume</h2>
@@ -14,4 +14,4 @@
     </section>
 </main>
 
-<?php require('view/partials/footer.view.php') ?>
+<?php require 'view/partials/footer.view.php'; ?>

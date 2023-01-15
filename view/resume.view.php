@@ -66,7 +66,7 @@
         </div>
 
         <div>
-            <?php require('view/partials/experience.view.php'); ?>
+            <?php require 'view/partials/experience.view.php'; ?>
         </div>
     </main>
 </body>
