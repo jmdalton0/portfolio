@@ -2,18 +2,16 @@
 
 <main>
     <section>
-        <h1><?= $project->get_name() ?></h1>
+        <h1>Project Name</h1>
         <p>I developed this application using the following technologies:</p>
 
         <div>
-            <?php foreach($project->get_versions() as $version) : ?>
-                <a href="<?= $version[1] ?>" target="_blank">
-                    <img
-                        src="assets/technologies/<?= $version[0] ?>.png"
-                        alt="<?= $version[0] ?> Logo"
-                    />
-                </a>
-            <?php endforeach ?>
+            <a href="" target="_blank">
+                <img
+                    src=""
+                    alt="Logo"
+                />
+            </a>
         </div>
     </section>
 </main>

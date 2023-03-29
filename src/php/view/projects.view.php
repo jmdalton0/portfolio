@@ -6,25 +6,23 @@
         <h2>Some of the applications I have developed</h2>
     </section>
 
-    <?php foreach ($projects as $project) : ?>
-        <section>
+    <section>
+        <div>
             <div>
-                <div>
-                    <h2><?= $project->get_name() ?></h2>
-                    <h4><?= $project->get_description() ?></h4>
-                    <a href="/projects?project=<?= $project->get_id() ?>">VIEW</a>
-                </div>
-                <div>
-                    <a href="/projects?project=<?= $project->get_id() ?>">
-                        <img
-                            src="assets/thumbnail/<?= $project->get_image() ?>"
-                            alt="<?= $project->get_name() ?>"
-                        />
-                    </a>
-                </div>
+                <h2>Project Name</h2>
+                <h4>Description</h4>
+                <a href="">VIEW</a>
             </div>
-        </section>
-    <?php endforeach; ?>
+            <div>
+                <a href="">
+                    <img
+                        src=""
+                        alt=""
+                    />
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
 <?php require 'view/partials/footer.view.php'; ?>
