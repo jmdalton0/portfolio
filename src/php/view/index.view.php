@@ -1,4 +1,4 @@
-<?php require 'view/partials/header.view.php'; ?>
+<?php require 'partials/header.view.php'; ?>
 
 <main>
     <section>
@@ -12,4 +12,4 @@
     </section>
 </main>
 
-<?php require 'view/partials/footer.view.php'; ?>
+<?php require 'partials/footer.view.php'; ?>

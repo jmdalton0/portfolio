@@ -1,0 +1,1 @@
+<?php require 'src/php/view/resume.view.php'; ?>

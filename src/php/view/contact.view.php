@@ -1,4 +1,4 @@
-<?php require 'view/partials/header.view.php'; ?>
+<?php require 'partials/header.view.php'; ?>
 
 <main>
     <section>
@@ -8,9 +8,10 @@
             </div>
             <div>
                 <h2>About Me</h2>
-                <p>I grew up in Las Vegas and started programming in 2016. I took "Intro to Programming in C++" and knew right away that I wanted to make this my career.</p>
-                <p>In my free time I enjoy snowboarding and making music.</p>
-                <p>Please reach out if you have any suggestions about my projects or if you think I would be a good fit for your team. I look forward to it!</p>
+                <p>I was born in Las Vegas and currently live in Utah.</p>
+                <p>I enjoy music, swimming, and woodworking.</p>
+                <p>I have been programming since 2016. Right now I am learning the Laravel framework.</p>
+                <p>Please reach out if you have any suggestions about my projects or if you think I would be a good fit for your team.</p>
             </div>
         </div>
     </section>
@@ -39,4 +40,4 @@
     </section>
 </main>
 
-<?php require 'view/partials/footer.view.php'; ?>
+<?php require 'partials/footer.view.php'; ?>
